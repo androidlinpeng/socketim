@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/websocketim_colorPrimaryDark"
+    tools:context="com.websocketim.activity.MyClubActivity">
+
+    <RelativeLayout
+        android:id="@+id/top_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/websocketim_height_top_bar"
+        android:background="@color/websocketim_colorPrimary">
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="6dp"
+            android:contentDescription="@null"
+            android:padding="8dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/socket_icom_back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:gravity="center_vertical"
+            android:text="哈皮俱乐部"
+            android:textColor="@color/socket_title_color_Dark"
+            android:textSize="@dimen/websocketim_top_bar_title_size" />
+
+        <ImageView
+            android:id="@+id/addclub"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/socket_icom_my_friends"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:padding="8dp"
+            android:layout_marginRight="5dp"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/top_bar">
+
+        <android.support.design.widget.TabLayout
+            android:id="@+id/sliding_tabs"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/socket_button_bg_gray"
+            app:tabGravity="fill"
+            app:tabIndicatorColor="@color/socket_title_color_Dark"
+            app:tabTextColor="@color/socket_tab_text_coloer_normal"
+            app:tabSelectedTextColor="@color/socket_title_color_Dark" />
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/viewpager"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_below="@+id/sliding_tabs"/>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

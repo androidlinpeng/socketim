@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="media_list_dialog">
+        <item>相册</item>
+        <item>相机</item>
+        <item>取消</item>
+    </string-array>
+    
+    <string-array name="content_choose_dialog">
+        <item>发送给好友</item>
+        <item>复制</item>
+        <item>删除</item>
+    </string-array>
+
+    <declare-styleable name="RoundLoadView">
+        <attr name="maxcolor" format="color"/>
+        <attr name="mincolor" format="color"/>
+    </declare-styleable>
+    
+</resources>

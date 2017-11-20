@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/websocketim_darker_gray">
+
+    <RelativeLayout
+        android:id="@+id/top_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/websocketim_height_top_bar"
+        android:background="@color/colorPrimary">
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:contentDescription="@null"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="6dp"
+            android:padding="8dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/icon_back_n" />
+
+        <View
+            android:id="@+id/view"
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:layout_toRightOf="@id/back"
+            android:background="@color/websocketim_colorPrimaryDark"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@+id/view"
+            android:layout_marginLeft="6dp"
+            android:gravity="center_vertical"
+            android:text="详情资料"
+            android:textColor="#fff"
+            android:textSize="@dimen/websocketim_top_bar_title_size" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/center"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_below="@+id/top_bar"
+        android:layout_marginTop="20dp"
+        android:background="@android:color/white">
+
+        <ImageView
+            android:id="@+id/avatar"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/ic_head_default"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@+id/avatar"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="15dp"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/mTv_username"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:text="用户"
+                android:textSize="16sp"
+                android:textColor="#292929"
+                android:gravity="center_vertical"/>
+
+            <TextView
+                android:id="@+id/mTv_nickname"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:text="签名"
+                android:textSize="14sp"
+                android:textColor="@color/websocketim_sub_text"
+                android:gravity="center_vertical"/>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/listView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/center"
+        android:layout_marginTop="18dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:divider="@color/websocketim_darker_gray"
+        android:dividerHeight="2px"
+        android:background="@android:color/white"/>
+
+    <Button
+        android:id="@+id/sendMsg"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/listView"
+        android:text="发消息"
+        android:textSize="16sp"
+        android:textColor="@android:color/white"
+        android:background="@drawable/side_nav_bar"/>
+
+</RelativeLayout>

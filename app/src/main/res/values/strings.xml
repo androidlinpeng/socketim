@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">包包圈</string>
+    <string name="websocketim_name">SocketIM</string>
+    <string name="action_pick_pic_from_gallery">从相册选择</string>
+    <string name="action_pick_pic_from_camera">拍照</string>
+    <string name="websocketim_action_confirm">确定</string>
+    <string name="websocketim_action_cancel">取消</string>
+    <string name="websocketim_str_dialog_tip">提示</string>
+    <string name="str_network_not_good">网络错误</string>
+
+    <string name="socketim_str_standings">战绩</string>
+    <string name="socketim_str_voice">语音</string>
+    <string name="socketim_str_send_redpacket">发红包</string>
+
+    <string name="socketim_str_username">请输入您的用户名</string>
+    <string name="socketim_str_password">请输入您的密码</string>
+    <string name="socketim_str_login">用户登录</string>
+    <string name="socketim_str_forgot_pwd">忘记密码</string>
+    <string name="socketim_str_sign_up_now">注册账号</string>
+    <string name="socketim_str_input_code">请输入您的验证码</string>
+    <string name="socketim_str_register">注册</string>
+    <string name="socketim_str_verification_code">获取验证码</string>
+
+    <string name="socketim_str_my_club">我的俱乐部</string>
+
+
+    <string name="socketim_str_delete_cache">清理缓存</string>
+
+</resources>

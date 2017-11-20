@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/websocketim_colorPrimaryDark"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/top_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/websocketim_height_top_bar"
+        android:background="@color/websocketim_colorPrimary">
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="6dp"
+            android:contentDescription="@null"
+            android:padding="8dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/socket_icom_back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:gravity="center_vertical"
+            android:text="@string/socketim_str_send_redpacket"
+            android:textColor="@color/socket_title_color_Dark"
+            android:textSize="@dimen/websocketim_top_bar_title_size" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="20dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/socket_senred_edittext_heigth"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/bg_button_gray">
+
+                <EditText
+                    android:id="@+id/redname"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="18dp"
+                    android:background="@null"
+                    android:textCursorDrawable="@drawable/color_cursor"
+                    android:gravity="center|left"
+                    android:hint="名称"
+                    android:paddingTop="2dp"
+                    android:singleLine="true"
+                    android:textColor="@color/socket_title_color_Dark"
+                    android:textColorHint="@color/websocketim_Dark"
+                    android:textSize="14sp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/socket_senred_edittext_heigth"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/bg_button_gray">
+
+                <EditText
+                    android:id="@+id/redpoint"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="18dp"
+                    android:layout_toLeftOf="@+id/fen"
+                    android:background="@null"
+                    android:inputType="number"
+                    android:textCursorDrawable="@drawable/color_cursor"
+                    android:gravity="center|left"
+                    android:hint="本包分数"
+                    android:paddingTop="2dp"
+                    android:singleLine="true"
+                    android:textColor="@color/socket_title_color_Dark"
+                    android:textColorHint="@color/websocketim_Dark"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/fen"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="30dp"
+                    android:gravity="center"
+                    android:textColor="@color/socket_text_colorPrimary"
+                    android:textSize="14sp"
+                    android:text="分"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/socket_senred_edittext_heigth"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/bg_button_gray">
+
+                <EditText
+                    android:id="@+id/rednumber"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="18dp"
+                    android:layout_toLeftOf="@+id/ge"
+                    android:background="@null"
+                    android:inputType="number"
+                    android:textCursorDrawable="@drawable/color_cursor"
+                    android:gravity="center|left"
+                    android:hint="包数"
+                    android:paddingTop="2dp"
+                    android:singleLine="true"
+                    android:textColor="@color/socket_title_color_Dark"
+                    android:textColorHint="@color/websocketim_Dark"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/ge"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="30dp"
+                    android:gravity="center"
+                    android:textColor="@color/socket_text_colorPrimary"
+                    android:textSize="14sp"
+                    android:text="个"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/socket_senred_edittext_heigth"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/bg_button_gray">
+
+                <EditText
+                    android:id="@+id/redbomb"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="18dp"
+                    android:layout_toLeftOf="@+id/hao"
+                    android:background="@null"
+                    android:inputType="number"
+                    android:textCursorDrawable="@drawable/color_cursor"
+                    android:gravity="center|left"
+                    android:hint="炸弹号"
+                    android:paddingTop="2dp"
+                    android:singleLine="true"
+                    android:textColor="@color/socket_title_color_Dark"
+                    android:textColorHint="@color/websocketim_Dark"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/hao"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="30dp"
+                    android:gravity="center"
+                    android:textColor="@color/socket_text_colorPrimary"
+                    android:textSize="14sp"
+                    android:text="号"/>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/redmoney"
+                android:layout_width="200dp"
+                android:layout_height="60dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="50dp"
+                android:gravity="center"
+                android:text="￥ 30.00"
+                android:textColor="@color/socket_title_color_Dark"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/sendRed"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/socket_button_heigth"
+                android:layout_below="@+id/redmoney"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/bg_button_red"
+                android:gravity="center"
+                android:text="@string/socketim_str_send_redpacket"
+                android:textColor="@color/socket_text_colorPrimary"
+                android:textSize="@dimen/socket_button_text_size" />
+
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

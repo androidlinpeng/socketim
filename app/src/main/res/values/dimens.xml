@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="websocketim_sider_bar_textsize">18sp</dimen>
+    <dimen name="websocketim_height_top_bar">56dp</dimen>
+    <dimen name="websocketim_top_bar_title_size">18sp</dimen>
+    <dimen name="socket_tab_text_size">12sp</dimen>
+    <dimen name="socket_button_radius">6dp</dimen>
+    <dimen name="socket_red_bg_radius">10dp</dimen>
+    <dimen name="socket_button_heigth">50dp</dimen>
+    <dimen name="socket_button_text_size">18sp</dimen>
+    <dimen name="socket_senred_edittext_heigth">50dp</dimen>
+    <dimen name="socket_setting_item_heigth">60dp</dimen>
+    <dimen name="socket_grab_red_dialog_heigth">350dp</dimen>
+
+</resources>

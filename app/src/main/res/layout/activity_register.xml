@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
+    android:paddingBottom="40dp">
+
+    <RelativeLayout
+        android:id="@+id/top_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/websocketim_height_top_bar"
+        android:background="@color/websocketim_colorPrimary">
+
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="6dp"
+            android:contentDescription="@null"
+            android:padding="8dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/socket_icom_back" />
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="新用户注册"
+            android:textColor="@color/socket_title_color_Dark"
+            android:textSize="@dimen/websocketim_top_bar_title_size" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/top_bar"
+        android:layout_marginTop="50dp"
+        android:paddingLeft="40dp"
+        android:paddingRight="40dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="34dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:contentDescription="@null"
+                android:scaleType="centerInside"
+                android:src="@drawable/socket_icom_username" />
+
+            <EditText
+                android:id="@+id/ed_username"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="18dp"
+                android:background="@null"
+                android:textCursorDrawable="@drawable/color_cursor"
+                android:gravity="center|left|top"
+                android:hint="@string/socketim_str_username"
+                android:paddingTop="2dp"
+                android:singleLine="true"
+                android:text="13521614827"
+                android:textColor="@color/socket_title_color_Dark"
+                android:textColorHint="@color/websocketim_Dark"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/socket_text_colorPrimary" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="34dp"
+            android:layout_marginTop="30dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:contentDescription="@null"
+                android:scaleType="centerInside"
+                android:src="@drawable/socket_icom_password" />
+
+            <EditText
+                android:id="@+id/ed_password"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="18dp"
+                android:background="@null"
+                android:textCursorDrawable="@drawable/color_cursor"
+                android:gravity="center|left|top"
+                android:hint="@string/socketim_str_password"
+                android:inputType="textPassword"
+                android:paddingTop="2dp"
+                android:singleLine="true"
+                android:textColor="@color/socket_title_color_Dark"
+                android:textColorHint="@color/websocketim_Dark"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/socket_text_colorPrimary" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="34dp"
+            android:layout_marginTop="30dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:contentDescription="@null"
+                android:scaleType="centerInside"
+                android:src="@drawable/socket_icom_key" />
+
+            <EditText
+                android:id="@+id/ed_code"
+                android:layout_width="150dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="18dp"
+                android:background="@null"
+                android:textCursorDrawable="@drawable/color_cursor"
+                android:gravity="center|left|top"
+                android:hint="@string/socketim_str_input_code"
+                android:paddingTop="2dp"
+                android:singleLine="true"
+                android:textColor="@color/socket_title_color_Dark"
+                android:textColorHint="@color/websocketim_Dark"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/bt_send_code"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="3dp"
+                android:background="@drawable/bg_button_yellow"
+                android:gravity="center"
+                android:text="@string/socketim_str_verification_code"
+                android:textColor="@color/websocketim_colorPrimaryDark"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/socket_text_colorPrimary" />
+
+        <Button
+            android:id="@+id/bt_register"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="60dp"
+            android:background="@drawable/bg_button_gray"
+            android:gravity="center"
+            android:text="@string/socketim_str_register"
+            android:textColor="@color/socket_title_color_Dark"
+            android:textSize="20sp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal">
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

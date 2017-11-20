@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <corners
+        android:bottomLeftRadius="@dimen/socket_red_bg_radius"
+        android:bottomRightRadius="@dimen/socket_red_bg_radius" />
+
+    <solid android:color="@color/socket_red_packet_bg_yellow" />
+
+</shape>

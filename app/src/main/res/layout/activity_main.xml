@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/top_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/websocketim_height_top_bar"
+        android:background="@color/websocketim_colorPrimary">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text=""
+            android:textColor="@color/socket_title_color_Dark"
+            android:textSize="@dimen/websocketim_top_bar_title_size" />
+
+    </RelativeLayout>
+
+    <FrameLayout
+        android:id="@+id/content_frame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/buttom_bar_group"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/top_bar"
+        android:background="@color/colorPrimaryDark" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_above="@+id/buttom_bar_group"
+        android:background="@color/websocketim_colorPrimary" />
+
+    <LinearLayout
+        android:id="@+id/buttom_bar_group"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/websocketim_colorPrimary"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:id="@+id/rl_discover"
+            style="@style/ButtomBar">
+
+            <ImageButton
+                android:id="@+id/buttom_discover"
+                style="@style/ButtomBarImgBtn"
+                android:background="@drawable/bar_discover"
+                android:contentDescription="@string/app_name"
+                android:visibility="gone"/>
+
+            <TextView
+                android:id="@+id/tv_discover"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/buttom_discover"
+                android:layout_centerHorizontal="true"
+                android:drawableTop="@drawable/bar_discover"
+                android:gravity="center"
+                android:text="发现"
+                android:textColor="@color/socket_tab_text_coloer_normal"
+                android:textSize="@dimen/socket_tab_text_size" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_news"
+            style="@style/ButtomBar">
+
+            <ImageButton
+                android:id="@+id/buttom_news"
+                style="@style/ButtomBarImgBtn"
+                android:background="@drawable/bar_news"
+                android:contentDescription="@string/app_name"
+                android:visibility="gone"/>
+
+            <TextView
+                android:id="@+id/tv_news"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/buttom_news"
+                android:layout_centerHorizontal="true"
+                android:drawableTop="@drawable/bar_news"
+                android:gravity="center"
+                android:text="消息"
+                android:textColor="@color/socket_tab_text_coloer_normal"
+                android:textSize="@dimen/socket_tab_text_size" />
+
+            <TextView
+                android:id="@+id/unread_tip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/new_tip_bg"
+                android:gravity="center"
+                android:textSize="12sp"
+                android:textColor="@android:color/white"
+                android:visibility="visible"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_center"
+            style="@style/ButtomBar">
+
+            <ImageButton
+                android:id="@+id/buttom_center"
+                style="@style/ButtomBarImgBtn"
+                android:background="@drawable/bar_center"
+                android:contentDescription="@string/app_name"
+                android:visibility="gone"/>
+
+            <TextView
+                android:id="@+id/tv_center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/buttom_center"
+                android:layout_centerHorizontal="true"
+                android:drawableTop="@drawable/bar_combat_gains"
+                android:gravity="center"
+                android:text=" "
+                android:textColor="@color/socket_tab_text_coloer_normal"
+                android:textSize="@dimen/socket_tab_text_size" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_combat_gains"
+            style="@style/ButtomBar">
+
+            <ImageButton
+                android:id="@+id/buttom_combat_gains"
+                style="@style/ButtomBarImgBtn"
+                android:background="@drawable/bar_combat_gains"
+                android:contentDescription="@string/app_name"
+                android:visibility="gone"/>
+
+            <TextView
+                android:id="@+id/tv_combat_gains"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/buttom_combat_gains"
+                android:layout_centerHorizontal="true"
+                android:drawableTop="@drawable/bar_combat_gains"
+                android:gravity="center"
+                android:text="战绩"
+                android:textColor="@color/socket_tab_text_coloer_normal"
+                android:textSize="@dimen/socket_tab_text_size" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_mine"
+            style="@style/ButtomBar">
+
+            <ImageButton
+                android:id="@+id/buttom_my"
+                style="@style/ButtomBarImgBtn"
+                android:background="@drawable/bar_my"
+                android:contentDescription="@string/app_name"
+                android:visibility="gone"/>
+
+            <TextView
+                android:id="@+id/tv_mine"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/buttom_my"
+                android:layout_centerHorizontal="true"
+                android:drawableTop="@drawable/bar_my"
+                android:gravity="center"
+                android:text="我的"
+                android:textColor="@color/socket_tab_text_coloer_normal"
+                android:textSize="@dimen/socket_tab_text_size" />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:visibility="visible">
+
+        <com.websocketim.view.RoundnessView
+            android:id="@+id/roundnessView"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_centerInParent="true"
+            android:background="@drawable/ic_im_take_video_btn"
+            android:visibility="visible"
+            app:maxcolor = "@color/websocketim_colorPrimary"
+            app:mincolor = "@color/socket_title_color_Dark"/>
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/socket_tab_icom_center_bg"
+            android:layout_centerInParent="true"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

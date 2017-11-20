@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="colorPrimary">#2d2c2c</color>
+    <color name="colorPrimaryDark">#252323</color>
+    <color name="colorAccent">#201f1f</color>
+
+    <color name="websocketim_colorPrimary">#2d2c2c</color>
+    <color name="websocketim_colorPrimaryDark">#252323</color>
+    <color name="websocketim_colorAccent">#201f1f</color>
+
+    <color name="websocketim_bg_glass">#88ffffff</color>
+    <color name="websocketim_sub_content">#353535</color>
+    <color name="websocketim_sub_text">#838283</color>
+    <color name="websocketim_transparent">#00000000</color>
+    <color name="websocketim_background">#eeefef</color>
+
+    <color name="websocketim_white">#f7f7f7</color>
+    <color name="websocketim_Half">#cecece</color>
+    <color name="websocketim_Dark">#878787</color>
+
+    <color name="websocketim_darker_gray">#e4e4e4</color>
+
+    <color name="websocketim_BgColor">#fafafa</color>
+    <color name="websocketim_ProgressColor">#37b934</color>
+
+    <color name="websocketim_sidebar_background_pressed">#50000000</color>
+    <color name="socket_title_color_Dark">#fdd635</color>
+    <color name="socket_text_colorPrimary">#fdeb9f</color>
+    <color name="socket_text_colorPrimaryDark">#fdd635</color>
+    <color name="socket_tab_text_coloer_selected">#fdd635</color>
+    <color name="socket_tab_text_coloer_normal">#7f7f80</color>
+    <color name="socket_drawer_transparent_dark">#d2595757</color>
+    <color name="socket_red_packet_bg_red">#fd5a54</color>
+    <color name="socket_red_packet_bg_yellow">#fdeb9f</color>
+    <color name="socket_button_bg_gray">#4b4b4b</color>
+
+</resources>

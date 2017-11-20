@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.websocketim">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.WRITE_CONTACTS" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+
+    <!--微信-->
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+
+
+    <application
+        android:name=".MyApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/websocketim_name"
+        android:roundIcon="@drawable/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/websocketim_Theme">
+        <activity
+            android:name=".activity.LoginActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/BaseTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.MainActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/BaseTheme" />
+        <activity
+            android:name=".activity.IMActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/BaseTheme" />
+        <activity
+            android:name=".activity.IMChatActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/BaseTheme" />
+        <activity
+            android:name=".activity.UserInfoPreviewActivity"
+            android:theme="@style/BaseTheme" />
+        <activity
+            android:name=".activity.TestActivity"
+            android:theme="@style/BaseTheme" />
+        <activity
+            android:name=".activity.GalleryActivity"
+            android:theme="@style/GalleryActivityTheme" />
+        <activity
+            android:name=".activity.VideoPlayActivity"
+            android:theme="@style/websocketim_Theme" />
+        <activity
+            android:name=".activity.ImRecordVideoActivity"
+            android:theme="@style/websocketim_Theme" />
+        <activity
+            android:name=".activity.CaptureVideoActivity"
+            android:theme="@style/websocketim_Theme" />
+        <activity
+            android:name=".activity.SensorActivity"
+            android:theme="@style/websocketim_Theme" />
+        <activity
+            android:name=".activity.ContactListActivity"
+            android:theme="@style/BaseTheme" />
+
+        <service
+            android:name=".service.SocketService"
+            android:exported="false"
+            android:persistent="true"
+            android:process="com.websocketim.service.SocketService">
+
+            <!-- <intent-filter android:priority="1000"></intent-filter> -->
+
+        </service>
+        <service android:name=".service.FakeService" />
+
+        <activity
+            android:name=".activity.RedPacketRoomActivity"
+            android:theme="@style/BaseTheme" />
+        <activity android:name=".activity.Main2Activity" />
+        <activity
+            android:name=".activity.RegisterActivity"
+            android:theme="@style/BaseTheme" />
+        <activity
+            android:name=".activity.SettingsActivity"
+            android:theme="@style/BaseTheme" />
+        <activity
+            android:name=".activity.RechargeActivity"
+            android:theme="@style/BaseTheme" />
+        <activity
+            android:name=".activity.SendRedPacketActivity"
+            android:theme="@style/BaseTheme" />
+        <activity
+            android:name=".activity.MyClubActivity"
+            android:theme="@style/BaseTheme" />
+        <activity
+            android:name=".activity.PersonalEditActivity"
+            android:theme="@style/BaseTheme" />
+        <activity
+            android:name=".activity.CreateClubActivity"
+            android:theme="@style/BaseTheme" />
+        <activity
+            android:name=".activity.ApplyforNoticeActivity"
+            android:theme="@style/BaseTheme" />
+        <activity
+            android:name=".activity.ClubControlActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/BaseTheme" />
+        <activity android:name=".wechat.wxapi.WXEntryActivity"
+            android:exported="true"
+            android:theme="@style/BaseTheme"/>
+
+        <receiver
+            android:name=".wechat.AppRegister"
+            android:permission="com.tencent.mm.plugin.permission.SEND" >
+            <intent-filter>
+                <action android:name="com.tencent.mm.plugin.openapi.Intent.ACTION_REFRESH_WXAPP" />
+            </intent-filter>
+        </receiver>
+
+    </application>
+
+</manifest>
